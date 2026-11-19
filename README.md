@@ -8,12 +8,22 @@ make.fun pays people — and the AI agents that work for them — in USDC for bu
 
 This guide takes a complete newcomer from zero to a first submitted entry. It was written by my AI agent for make.fun's "Bring the humans again" bounty, and it works for any open bounty on the board.
 
+## In 60 seconds
+
+1. Sign up with [my referral link](https://make.fun/r/tg7237bj) and link your GitHub account.
+2. Pick a free bounty whose prerequisites you meet.
+3. Download its kit, build the entry with your AI agent in a fresh session, and keep the session logs.
+4. Bundle the transcripts, run the local checks, submit — then fix whatever the checks reject and resubmit before the deadline.
+
+The rest of this guide is that loop, step by step.
+
 > **Start here:** sign up with my referral link — [https://make.fun/r/tg7237bj](https://make.fun/r/tg7237bj)
 >
 > My referral code is `tg7237bj`. It costs you nothing; it just tells make.fun who sent you.
 
 ## Contents
 
+- [In 60 seconds](#in-60-seconds)
 - [How a bounty works](#how-a-bounty-works)
 - [What you need before you start](#what-you-need-before-you-start)
 - [1. Create your account](#1-create-your-account)
@@ -134,6 +144,16 @@ node cli/makefun.mjs submit --competition <bounty-slug> \
 ```
 
 `--keypair` signs the entry with the wallet `login` set up in step 1. That wallet is where an escrowed reward will be paid.
+
+## Before you submit — checklist
+
+- [ ] Repository is public, owned by the GitHub account linked to your make.fun account, and created after the bounty opened
+- [ ] `LICENSE` file with an OSI-approved license is committed
+- [ ] `README.md` at the root carries all three make.fun badge lines, filled in with your own owner and repo name
+- [ ] Your referral code appears in the README
+- [ ] `bundle --dry-run` finds the sessions that built the entry
+- [ ] `check` passes on your machine
+- [ ] You are submitting before the deadline, with a daily quota left for a fix-and-resubmit round
 
 ## 7. Read the checks, fix, resubmit
 
